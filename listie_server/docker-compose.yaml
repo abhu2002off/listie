@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:14.1
+    ports:
+      - '8090:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: listie
+      POSTGRES_PASSWORD: "tL7MqKlP3miZLXSX-v1JGQgUICEKExsX"
+    volumes:
+      - listie_data:/var/lib/postgresql/data
+  redis:
+    image: redis:6.2.6
+    ports:
+      - '8091:6379'
+    command: redis-server --requirepass "mPfTzgRS-gxENFmcL9RCTPNeJY12sD_k"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+volumes:
+  listie_data:
