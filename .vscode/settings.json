@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 8090,
+      "driver": "PostgreSQL",
+      "database": "listie",
+      "username": "postgres",
+      "password": "tL7MqKlP3miZLXSX-v1JGQgUICEKExsX",
+      "name": "listie"
+    }
+  ]
+}
